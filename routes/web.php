@@ -11,6 +11,10 @@ Route::get('/', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/rules', function () {
+    return view('game.rules');
+})->middleware(['auth', 'verified'])->name('rules');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

@@ -11,10 +11,10 @@
                     <div class="flex flex-col space-y-4 text-center">
                         <a href="/"
                             class="px-6 py-3 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition">
-                            Start game
+                            Play
                         </a>
 
-                        <a href="/"
+                        <a href="{{ route('rules') }}"
                             class="px-6 py-3 bg-gray-800 text-white font-bold rounded-lg hover:bg-gray-700 transition">
                             How to Play
                         </a>
