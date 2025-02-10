@@ -2,7 +2,7 @@
     @csrf
     <div class="mb-4">
         <div class="flex items-center justify-center py-4 text-8xl">
-            
+
             @if(Auth::user()->profile_image)
                 <img src="{{ asset('storage/profile_images/' . Auth::user()->profile_image) }}"
                     class="w-auto h-36 object-cover border border-gray-300 shadow-sm">
