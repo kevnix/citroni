@@ -5,9 +5,13 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <p>{{ Auth::user()->balance }}</p>
-                    <i class="fa-solid fa-lemon text-yellow-400 text-xl p-2 "></i>
                     
+                    <a href="/" class="shrink-0 flex items-center">
+                        <i class="fa-solid fa-plus text-l pr-2 py-2"></i>
+                        <p class="text-xl">{{ Auth::user()->balance }}</p>
+                        <i class="fa-solid fa-lemon text-yellow-400 text-xl px-2 "></i>
+                        
+                    </a>
                 </div>
 
                 <!-- Navigation Links -->
@@ -76,11 +80,11 @@
 
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
-        <div class="pt-2 pb-3 space-y-1">
+        {{-- <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-        </div>
+        </div> --}}
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
