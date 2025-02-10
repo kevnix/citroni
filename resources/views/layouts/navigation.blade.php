@@ -4,11 +4,11 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                {{-- <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }} ">
-                        <x-application-logo  />
-                    </a>
-                </div> --}}
+                <div class="shrink-0 flex items-center">
+                    <p>{{ Auth::user()->balance }}</p>
+                    <i class="fa-solid fa-lemon text-yellow-400 text-xl p-2 "></i>
+                    
+                </div>
 
                 <!-- Navigation Links -->
                 {{-- <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
